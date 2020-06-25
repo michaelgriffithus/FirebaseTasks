@@ -19,6 +19,9 @@
 		8EDDA15124A29AFF00366764 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDA15024A29AFF00366764 /* TaskListViewModel.swift */; };
 		8EDDA15324A3911E00366764 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDA15224A3911D00366764 /* GoogleService-Info.plist */; };
 		8EEADDE824A3E9EB00BF1BF4 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADDE724A3E9EB00BF1BF4 /* TaskRepository.swift */; };
+		8EEADDEA24A515DA00BF1BF4 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADDE924A515DA00BF1BF4 /* SignInWithAppleButton.swift */; };
+		8EEADDEC24A516F100BF1BF4 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADDEB24A516F100BF1BF4 /* SigninView.swift */; };
+		8EEADDEF24A51E4800BF1BF4 /* SigninWithAppleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADDEE24A51E4800BF1BF4 /* SigninWithAppleCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,10 @@
 		8EDDA15024A29AFF00366764 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		8EDDA15224A3911D00366764 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8EEADDE724A3E9EB00BF1BF4 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		8EEADDE924A515DA00BF1BF4 /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
+		8EEADDEB24A516F100BF1BF4 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		8EEADDEE24A51E4800BF1BF4 /* SigninWithAppleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithAppleCoordinator.swift; sourceTree = "<group>"; };
+		8EEADDF024A526FA00BF1BF4 /* FirebaseTasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseTasks.entitlements; sourceTree = "<group>"; };
 		A366B16D507318CD0CEA4620 /* Pods_FirebaseTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF95E1874E66AF240222585C /* Pods-FirebaseTasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTasks.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTasks/Pods-FirebaseTasks.debug.xcconfig"; sourceTree = "<group>"; };
 		F3CDFDD09E3314E59B4EF15C /* Pods-FirebaseTasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTasks.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTasks/Pods-FirebaseTasks.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +88,8 @@
 		8EDDA13324A28DE400366764 /* FirebaseTasks */ = {
 			isa = PBXGroup;
 			children = (
+				8EEADDF024A526FA00BF1BF4 /* FirebaseTasks.entitlements */,
+				8EEADDED24A51E2200BF1BF4 /* Services */,
 				8EEADDE624A3E9CD00BF1BF4 /* Repositories */,
 				8EDDA14B24A28EDC00366764 /* App */,
 				8EDDA14824A28DFB00366764 /* Model */,
@@ -124,6 +133,8 @@
 		8EDDA14C24A28EF800366764 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8EEADDE924A515DA00BF1BF4 /* SignInWithAppleButton.swift */,
+				8EEADDEB24A516F100BF1BF4 /* SigninView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +154,14 @@
 				8EEADDE724A3E9EB00BF1BF4 /* TaskRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8EEADDED24A51E2200BF1BF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8EEADDEE24A51E4800BF1BF4 /* SigninWithAppleCoordinator.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F325A1528C20B8871FD42C25 /* Pods */ = {
@@ -270,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EEADDEF24A51E4800BF1BF4 /* SigninWithAppleCoordinator.swift in Sources */,
+				8EEADDEA24A515DA00BF1BF4 /* SignInWithAppleButton.swift in Sources */,
 				8EDDA14A24A28E1800366764 /* Task.swift in Sources */,
+				8EEADDEC24A516F100BF1BF4 /* SigninView.swift in Sources */,
 				8EDDA13524A28DE400366764 /* AppDelegate.swift in Sources */,
 				8EDDA13724A28DE400366764 /* SceneDelegate.swift in Sources */,
 				8EDDA13924A28DE400366764 /* TaskListView.swift in Sources */,
@@ -413,8 +435,10 @@
 			baseConfigurationReference = DF95E1874E66AF240222585C /* Pods-FirebaseTasks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseTasks/FirebaseTasks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseTasks/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AB22JDUY3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FirebaseTasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -433,8 +457,10 @@
 			baseConfigurationReference = F3CDFDD09E3314E59B4EF15C /* Pods-FirebaseTasks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseTasks/FirebaseTasks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseTasks/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AB22JDUY3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FirebaseTasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

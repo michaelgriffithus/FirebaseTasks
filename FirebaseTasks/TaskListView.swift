@@ -11,6 +11,8 @@ import SwiftUI
 struct TaskListView: View {
     @ObservedObject var taskListVM = TaskListViewModel()
     @State var presentAddNewItem = false
+    @State var showSigninForm = false
+    
     var body: some View {
         VStack {
             NavigationView{
@@ -34,7 +36,15 @@ struct TaskListView: View {
                         }.padding(.leading)
                     }
                 }
-                .navigationBarTitle("Tasks")
+                .sheet(isPresented: $showSigninForm){
+                    SigninView()
+                }
+                .navigationBarItems(trailing:
+                    Button(action: {self.showSigninForm.toggle() } ) {
+                        Image(systemName: "person.circle")
+                    }
+                )
+                    .navigationBarTitle("Tasks")
             }
         }
     }
