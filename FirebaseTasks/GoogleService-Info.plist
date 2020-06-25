@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>449657817141-p7ma2utv0qpodbbf389s6v2c9739s6oh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.449657817141-p7ma2utv0qpodbbf389s6v2c9739s6oh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBgS5fopoprJzW9_tGXNk6vPYI5esc10Nk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>449657817141</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ibm.FirebaseTasks</string>
+	<key>PROJECT_ID</key>
+	<string>tasks-c6064</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tasks-c6064.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:449657817141:ios:32d5278be34c61c78a097c</string>
+	<key>DATABASE_URL</key>
+	<string>https://tasks-c6064.firebaseio.com</string>
+</dict>
+</plist>
