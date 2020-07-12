@@ -10,4 +10,6 @@ target 'FirebaseTasks' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Messaging'
+  pod 'FirebaseInstanceID'
 end
